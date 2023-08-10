@@ -1,0 +1,9 @@
+<h1 class="pt-3 display-4 text-center bg-light text-dark"><%= @list.name %></h1>
+
+<p class= "lead text-center"><%= @list.description %></p>
+
+<%= render 'books/books_table', books: @list.books %>
+
+
+<p class="text-center"><%= link_to "Edit List", edit_list_path(@list), class: 'btn btn-outline-dark btn-lg'%></p>
+<p class="justify-content-center"><%= button_to "Delete list", @list, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-lg mx-auto d-block" %></p>

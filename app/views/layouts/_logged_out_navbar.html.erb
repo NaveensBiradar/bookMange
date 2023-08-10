@@ -1,0 +1,9 @@
+<nav class="navbar navbar-expand-sm nav-fill navbar-light bg-dark ">
+  <div class="navbar-brand text-info" >Book Nook</div>
+  <div class="container "> 
+    <%= link_to "Home", root_path, class: 'text-light nav-link'%> |
+    <%= link_to "Log In", login_path, class: 'text-light nav-link' %> |
+    <%= link_to "Sign Up", signup_path, class: 'text-light nav-link'%> |
+    <%= link_to 'Log in with Github!', '/auth/github', class: 'text-light nav-link' %>
+  </div>
+</nav>

@@ -1,0 +1,38 @@
+
+
+User 
+Hasmany :PostArticals
+Hasmany :comments
+
+
+PostArticals
+belongs_to :user
+hasmany :Comments
+
+Comments
+belogs_to :User
+belogs_PostArticals
+
+
+============
+ffsdfdsf
+
+type call oncjanges function (e)
+
+searchItem = e.target.value
+//Serch 
+autosuggestions = PostArticals.find_by(%s searchItem :title, %s searchItem :body)
+
+User typer new
+
+<% autosuggestions.each do |p| <#myindut>p </myindut> %>
+
+
+rails generate migration addColounToComments name:string 
+
+<textarea > <textare>
+
+secountHist = EmploySalary(id, name, where salary
+
+
+
